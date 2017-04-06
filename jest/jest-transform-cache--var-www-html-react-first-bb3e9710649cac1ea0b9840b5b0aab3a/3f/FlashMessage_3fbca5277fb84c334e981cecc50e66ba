@@ -1,0 +1,30 @@
+/* istanbul ignore next */'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/var/www/html/react-first/src/flashmessages/FlashMessage.js';var /* istanbul ignore next */_react = require('react'); /* istanbul ignore next */var _react2 = _interopRequireDefault(_react);
+var /* istanbul ignore next */_classnames = require('classnames'); /* istanbul ignore next */var _classnames2 = _interopRequireDefault(_classnames);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+class FlashMessage extends /* istanbul ignore next */_react.Component {
+    constructor(props) {
+        super(props);
+        this.onClick = this.onClick.bind(this);
+    }
+    onClick() {
+        this.props.deleteFlashMessage(this.props.message.id);
+    }
+    render() {
+        const { type, text } = this.props.message;
+        return (
+            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: /* istanbul ignore next */(0, _classnames2.default)('alert', {
+                        'alert-success': type === 'success',
+                        'alert-danger': type === 'error' }), __source: { fileName: _jsxFileName, lineNumber: 15 }, __self: this },
+
+                /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ className: 'close', onClick: this.onClick, __source: { fileName: _jsxFileName, lineNumber: 19 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'span', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 19 }, __self: this }, /* istanbul ignore next */'\xD7')),
+                text));
+
+
+    }}
+
+
+FlashMessage.propTypes = {
+    message: /* istanbul ignore next */_react2.default.PropTypes.object.isRequired,
+    deleteFlashMessage: /* istanbul ignore next */_react2.default.PropTypes.func.isRequired }; /* istanbul ignore next */exports.default =
+
+FlashMessage;

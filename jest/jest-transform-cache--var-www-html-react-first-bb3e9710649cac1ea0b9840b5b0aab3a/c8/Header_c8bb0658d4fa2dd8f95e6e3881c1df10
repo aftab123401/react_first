@@ -1,0 +1,38 @@
+/* istanbul ignore next */'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/var/www/html/react-first/src/layouts/Header.js';var /* istanbul ignore next */_react = require('react'); /* istanbul ignore next */var _react2 = _interopRequireDefault(_react);
+/* istanbul ignore next */require('../App.css');
+var /* istanbul ignore next */_reactRouter = require('react-router');
+
+/* istanbul ignore next */require('../css/materialize.css');
+/* istanbul ignore next */require('../css/materialize.min.css');
+var /* istanbul ignore next */_reactMaterialize = require('react-materialize'); /* istanbul ignore next */function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+class Header extends /* istanbul ignore next */_react.Component {
+    render() {
+        return (
+            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'header', __source: { fileName: _jsxFileName, lineNumber: 12 }, __self: this },
+                /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'nav', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 13 }, __self: this },
+                    /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'nav-wrapper', __source: { fileName: _jsxFileName, lineNumber: 14 }, __self: this },
+                        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactRouter.Link, /* istanbul ignore next */{ to: '/', className: 'rand-logo', style: { fontSize: '29px', marginLeft: '350px !important' }, __source: { fileName: _jsxFileName, lineNumber: 15 }, __self: this }, /* istanbul ignore next */'Health Care'),
+                        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'ul', /* istanbul ignore next */{ id: 'nav-mobile', className: 'right hide-on-med-and-down', __source: { fileName: _jsxFileName, lineNumber: 16 }, __self: this },
+                            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'li', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 17 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactRouter.Link, /* istanbul ignore next */{ to: '/', __source: { fileName: _jsxFileName, lineNumber: 17 }, __self: this }, /* istanbul ignore next */'Home')),
+                            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'li', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 18 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactRouter.Link, /* istanbul ignore next */{ to: '/About', __source: { fileName: _jsxFileName, lineNumber: 18 }, __self: this }, /* istanbul ignore next */'About')),
+                            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'li', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 19 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactRouter.Link, /* istanbul ignore next */{ to: '/Doctor', __source: { fileName: _jsxFileName, lineNumber: 19 }, __self: this }, /* istanbul ignore next */'Doctors')),
+                            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'li', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 20 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactRouter.Link, /* istanbul ignore next */{ to: '/Services', __source: { fileName: _jsxFileName, lineNumber: 20 }, __self: this }, /* istanbul ignore next */'Services')),
+                            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'li', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 21 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactRouter.Link, /* istanbul ignore next */{ to: '/contact', __source: { fileName: _jsxFileName, lineNumber: 21 }, __self: this }, /* istanbul ignore next */'Contact')),
+                            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'li', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 22 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactMaterialize.Button, /* istanbul ignore next */{ type: 'button', className: 'btn-raised btn-info', style: { marginRight: '10px' }, __source: { fileName: _jsxFileName, lineNumber: 22 }, __self: this }, /* istanbul ignore next */'Login')),
+                            /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'li', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 23 }, __self: this }, /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_reactRouter.Link, /* istanbul ignore next */{ to: '/Signup', className: 'btn btn-primary', style: { marginRight: '10px' }, __source: { fileName: _jsxFileName, lineNumber: 23 }, __self: this }, /* istanbul ignore next */'SignUp')))))));
+
+
+
+
+
+
+
+
+
+
+
+
+    }} /* istanbul ignore next */exports.default =
+
+Header;

@@ -1,0 +1,14 @@
+/* istanbul ignore next */'use strict';Object.defineProperty(exports, "__esModule", { value: true });exports.
+
+addFlashMessage = addFlashMessage; /* istanbul ignore next */exports.
+
+
+
+
+
+deleteFlashMessage = deleteFlashMessage;var /* istanbul ignore next */_types = require('./types');function addFlashMessage(message) {return { type: /* istanbul ignore next */_types.ADD_FLASH_MESSAGE, message };}function deleteFlashMessage(id) {
+    return {
+        type: /* istanbul ignore next */_types.DELETE_FLASH_MESSAGE,
+        id };
+
+}
