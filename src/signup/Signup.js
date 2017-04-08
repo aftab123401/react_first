@@ -59,11 +59,12 @@ class Signup extends Component {
 
        $.ajax({
     type: 'POST',
-    url: 'http://localhost/laravelApi/members/createuser',
+    url: 'http://localhost/laravelApi/reactapi/signup',
     data: data
   })
   .done(function(data) {
-   
+   alert("signed up successfully");
+   console.log("signed up");
    
   })
   .fail(function(jqXhr) {

@@ -20,7 +20,7 @@ class Members extends Component {
     }
 
     componentDidMount() {
-        this.getDataFromServer('http://localhost/laravelApi/members/getmembers');
+        this.getDataFromServer('http://localhost/laravelApi/reactapi/users');
     }
     showResult(response) {
         let arr = response.data;
@@ -49,22 +49,34 @@ class Members extends Component {
         let renderUsername = () => {
             return data.map((item, key) => {
                 return (
-                    <div key={key}>
+                    <tr key={key}>
                        
-                                <div>{item.username}</div><div> {item.email}</div>
+                                <td>{item.username}</td>
+                                <td> {item.email}</td>
                                
-                    </div>
+                    </tr>
                 );
             });
         }
         return (
-            <div>
-               
-                    <div>Username</div> <div>Email</div>
-                   
-                     {renderUsername()}
-                  
+
+                  <div className="row">
+                <div className="col-md-12">
+                    <table className="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th className="col-md-4">UserName</th>
+                                <th >Email</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {renderUsername()}
+                        </tbody>
+                    </table>
+                </div>
             </div>
+                       
         );
 
     
